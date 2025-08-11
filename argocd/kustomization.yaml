@@ -14,5 +14,4 @@ namespace: external-secrets
 resources:
   - namespace.yaml
   # Determine latest stable version from https://github.com/external-secrets/external-secrets/releases
-  # - https://raw.githubusercontent.com/external-secrets/external-secrets/v0.19.1/deploy/crds/bundle.yaml
-  - https://github.com/external-secrets/external-secrets/releases/download/v0.19.1/external-secrets.yaml
+  # - https://github.com/external-secrets/external-secrets/releases/download/v0.19.1/external-secrets.yaml
