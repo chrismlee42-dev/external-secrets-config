@@ -4,7 +4,7 @@ metadata:
   name: external-secrets-config
 
 commonLabels:
-  app: external-secrets
+  app: metrics-server
   managedBy: argocd
   managementCodeGroup: chrismlee42-dev
   managementCodeProject: external-secrets-config
