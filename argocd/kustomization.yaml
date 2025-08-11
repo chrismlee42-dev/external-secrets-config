@@ -4,12 +4,21 @@ metadata:
   name: external-secrets-config
 
 commonLabels:
-  app: metrics-server
+  app: external-secrets
   managedBy: argocd
   managementCodeGroup: chrismlee42-dev
   managementCodeProject: external-secrets-config
 
 namespace: external-secrets
+
+helmCharts:
+  - includeCRDs: true
+    name: external-secrets
+    namespace: external-secrets
+    releaseName: external-secrets
+    repo: https://charts.external-secrets.io
+    version: v0.19.1
+    # valuesFile: values.yaml
 
 resources:
   - namespace.yaml
